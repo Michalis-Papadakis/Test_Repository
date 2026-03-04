@@ -1,8 +1,8 @@
 def print_tree(rows: int) -> None:
 
-   
+   # this is a wrong outcome
     for i in range(rows):
-        spaces = " " * (rows - i - 1)
+        spaces = " " * (rows - i + 1)
         stars = "*" * (2 * i + 1)
         print(spaces + stars)
 
@@ -29,7 +29,7 @@ def ask_positive_int(prompt: str) -> int:
 
 
 def main():
-    rows = ask_positive_int("Δώσε αριθμό γραμμών για το δέντρο: ")
+    rows = ask_positive_int("Δώσε αριθμό γραμμών για τ ")
     print_tree(rows)
 
 
